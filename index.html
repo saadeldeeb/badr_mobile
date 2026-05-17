@@ -18,9 +18,9 @@
             // User-Agent fallback safety check 
             const isMobileUA = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-            // Redirects straight into your folder's index.html
+            // Redirects to your brand-new mobile repository URL
             if (isSmallScreen || isTouchDevice || isMobileUA) {
-                window.location.replace("mobile/");
+                window.location.replace("https://saadeldeeb.github.io/badr_mobile/");
             }
         })();
     </script>
@@ -709,7 +709,7 @@ function renderBattlefieldScene() {
 
     skylineBuildingsClose.forEach(b => {
         ctx.fillStyle = '#100f1f';
-        ctx.fillRect(b.x, b.y, b.w, 500);
+        ctx.fillRect(b.w, b.y, b.w, 500);
         ctx.fillStyle = '#ffd466';
         ctx.globalAlpha = 0.2;
         b.windows.forEach(w => ctx.fillRect(b.x + w.x, b.y + w.y, 5, 8));
