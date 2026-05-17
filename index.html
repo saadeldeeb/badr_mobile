@@ -18,9 +18,9 @@
             // User-Agent fallback safety check 
             const isMobileUA = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-            // If any condition is met, safely replace the window location with the mobile file
+            // Redirects straight into your folder's index.html
             if (isSmallScreen || isTouchDevice || isMobileUA) {
-                window.location.replace("mobile.html");
+                window.location.replace("mobile/");
             }
         })();
     </script>
